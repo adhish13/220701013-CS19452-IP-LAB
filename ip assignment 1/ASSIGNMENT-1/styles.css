@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Outfit", sans-serif;
+}
+
+header {
+    background-color: green; 
+    text-align: center;
+    color: #fff;
+    padding: 2%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 75vh;
+    border-top: 5px solid green
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #e0e0e0; 
+    width: 20%;
+    border-right: 2px solid #ccc;
+}
+
+.tform {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: 20px 50px;
+    gap: 20px;
+}
+
+main {
+    width: 75%;
+    background-color: #f9f9f9; 
+}
+
+input, textarea {
+    border: 2px solid green; 
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 80px;
+}
+
+.addtask {
+    margin: 0 auto;
+    width: 35%;
+    height: 40px;
+    border: none;
+    background-color: green; 
+    cursor: pointer;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+footer {
+    background-color: green; 
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 1%;
+    position: relative;
+}
+
+.nav-link {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-link a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+}
+
+.nav-link a:hover {
+    color: #b3b3b3; 
+}
+
+.statusbtn {
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    background-color:green; 
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.statusbtn:hover {
+    background-color: #0056b3; 
+}
+
+.addtask:hover {
+    background-color: #0056b3; 
+}
+
+.tasks {
+    background-color: #f4f4f4; 
+    width: 75%;
+    padding: 20px;
+}
+
+.taskslist {
+    overflow: auto;
+    padding-top: 20px;
+    max-height: 60vh;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.list .des {
+    max-width: 120px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-align: justify;
+}
+
+.list .h44 {
+    max-width: 80px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-size: 22px;
+    text-align: justify;
+    font-weight: 700;
+}
+
+.actions {
+    padding: 5px;
+    width: 85px;
+    border-radius: 12px;
+    background: none;
+    cursor: pointer;
+    background-color: #e0e0e0; 
+    font-size: 14px;
+}
+
+.actions:hover {
+    background-color: #c0c0c0; 
+}
+
+.statusbtn:focus-within {
+    background-color: #003d7a;
+    color: #ff0000;
+}
